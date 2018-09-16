@@ -2,10 +2,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn Heroku - Hello World!</title>
+    <title>YouTube Data API Quickstart</title>
   </head>
   <body>
     <h1>Hello World!</h1>
+    <button id="authorize-button" style="display: none:">Authorize</button>
+    <button id="signout-button" style="display: none:">Sign Out</button>
+    <button onclick="playVid()" type="button" style="display: none:">Play Video</button>
+    <button onclick="pauseVid()" type="button" style="display: none:">Pause Video</button><br>
+    <pre id="content"></pre>
+    
+    <iframe width="840" height="420" id="myVideo"
+    src="https://www.youtube.com/watch?v=ObLuL1_-iWA"</iframe>
 <style>
 h1 {
   color: teal;
